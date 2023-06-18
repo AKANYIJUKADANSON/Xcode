@@ -7,12 +7,41 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/tv_dobSelected"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="20/05/2023"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/selectDobBtn"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:inputType="date"
+        android:onClick="selectDate"
+        android:text="SELECT DOB"
+        app:layout_constraintEnd_toEndOf="@+id/tv_dobSelected"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/tv_dobSelected"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dobSelected" />
+
+    <TextView
+        android:id="@+id/tv_age_display"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="68dp"
+        android:text="0"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/selectDobBtn"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/selectDobBtn"
+        app:layout_constraintTop_toBottomOf="@+id/selectDobBtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
