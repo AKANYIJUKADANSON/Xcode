@@ -12,7 +12,7 @@ class Splash : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        val logoToAnimate = findViewById<ImageView>(R.id.splash_image)
+        val logoToAnimate = findViewById<ImageView>(R.id.list_image)
         val animation = AnimationUtils.loadAnimation(this, androidx.appcompat.R.anim.abc_slide_in_bottom)
         logoToAnimate.startAnimation(animation)
 
