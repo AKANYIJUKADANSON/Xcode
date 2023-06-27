@@ -13,4 +13,10 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="AppTheme" parent="Theme.Material3.Dark">
+        <item name="colorPrimary">#E91E63</item>
+        <item name="colorPrimaryContainer">#E91E63</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
 </resources>
