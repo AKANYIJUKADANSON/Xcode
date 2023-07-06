@@ -8,8 +8,12 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="appColor">#FF1B1B</color>
-
+    <color name="appColor1">#FD3301</color>
 
     <color name="deep_sky_blue">#0277BD</color>
+    <color name="stroke_color">#616161</color>
 
+    //error colors
+    <color name="errorColor">#EA004F</color>
+    <color name="errorFreeColor">#216E24</color>
 </resources>

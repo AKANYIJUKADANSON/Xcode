@@ -1,0 +1,10 @@
+<TextView
+    android:id="@+id/tv_custom_table"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="T01"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    android:padding="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

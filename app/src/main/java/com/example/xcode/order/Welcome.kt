@@ -24,7 +24,7 @@ class Welcome : AppCompatActivity() {
 
     fun makeOrder(view: View) {
         view.setOnClickListener {
-            val intent = Intent(this, RecyclerView::class.java)
+            val intent = Intent(this, Tables::class.java)
             startActivity(intent)
         }
     }

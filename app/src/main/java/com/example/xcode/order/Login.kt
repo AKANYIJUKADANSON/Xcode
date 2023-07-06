@@ -17,4 +17,10 @@ class Login : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+
+    private fun validateUserLoginDetails(){
+
+    }
+
 }

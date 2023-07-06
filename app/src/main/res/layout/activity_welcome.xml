@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -53,7 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="5dp"
-            android:text="CJ's PARLOUR"
+            android:text="CJ's FOOD PARLOUR"
             android:textColor="@color/appColor"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -61,14 +62,14 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="317dp"
-        android:layout_height="59dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="32dp"
         android:gravity="center"
-        android:text="@string/simple_welcom_text"
-        android:textSize="17sp"
+        android:text="@string/simple_welcome_text"
+        android:textSize="19sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.43"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,19 +88,20 @@
 
     <Button
         android:id="@+id/make_order_btn"
-        android:layout_width="155dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
-        android:background="#FF1B1B"
+        android:backgroundTint="#FF1B1B"
         android:onClick="makeOrder"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:padding="10dp"
+        android:text="make order"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:text="make order" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 
 

@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Xcode</string>
-    <string name="simple_welcom_text">Sit comfortably, relax and order your favorite meal</string>
+    <string name="sign_in_username_hint">User name</string>
+    <string name="sign_up_text">SIGN UP</string>
+    <string name="sign_in_email_hint">Email ID</string>
+    <string name="sign_in_password_hint">Password</string>
+    <string name="sign_in_confirm_password_hint">Confirm password</string>
+    <string name="simple_welcome_text">Where every flavor tells a story</string>
 </resources>
