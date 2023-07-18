@@ -1,12 +1,16 @@
 package com.example.xcode.order
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
+import com.example.xcode.MainActivity
 import com.example.xcode.R
+import com.example.xcode.RecyclerView
 
 class Tables : AppCompatActivity() {
     private lateinit var mSelectedTable:String
@@ -17,6 +21,12 @@ class Tables : AppCompatActivity() {
 
         // setting up the action bar
         setUpActionBar()
+
+        val selectTableButton = findViewById<Button>(R.id.select_table_btn)
+        selectTableButton.setOnClickListener {
+           val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
         val tables = arrayOf("T01", "T02", "T03", "T04", "T05", "T06", "T07")
         val tablesArrayAdapter = ArrayAdapter(this, R.layout.custom_table, tables)

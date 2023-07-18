@@ -6,4 +6,9 @@
     <string name="sign_in_password_hint">Password</string>
     <string name="sign_in_confirm_password_hint">Confirm password</string>
     <string name="simple_welcome_text">Where every flavor tells a story</string>
+    <string name="errorPermission">Permission denied</string>
+
+    <string name="errorImageUrl">Please select image</string>
+    <string name="errorMenuName">Please enter the menu name</string>
+
 </resources>

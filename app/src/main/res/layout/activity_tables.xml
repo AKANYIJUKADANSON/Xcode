@@ -20,7 +20,7 @@
             android:layout_height="match_parent"
             android:gravity="fill"
             android:paddingEnd="0dp"
-            android:text="TABLES"
+            android:text="SELECT TABLE"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -29,38 +29,38 @@
     </androidx.appcompat.widget.Toolbar>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        app:boxStrokeColor="@color/appColor"
-        app:startIconDrawable="@drawable/baseline_table"
-        app:startIconTint="@color/appColor"
+        android:id="@+id/textInputLayout5"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        app:layout_constraintEnd_toEndOf="@+id/textView4"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView4">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="24dp"
+        android:hint="Select table No."
+        app:boxStrokeColor="@color/appColor"
+        app:hintTextColor="@color/appColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tables_toolbar"
+        app:startIconTint="@color/appColor">
 
         <AutoCompleteTextView
             android:id="@+id/ac_tv_tables"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Table No."/>
+            android:layout_height="50dp"
+            android:inputType="none" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="32dp"
-        android:gravity="fill"
-        android:textColor="@color/black"
-        android:text="SELECT TABLE ON WHICH YOU'RE SITED ON"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+    <Button
+        android:id="@+id/select_table_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="SELECT"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout5"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tables_toolbar" />
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    tools:context=".admin.AddMenu">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/add_menu_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/appColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+    <TextView
+        android:id="@+id/tv_title_cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="fill"
+        android:paddingEnd="0dp"
+        android:text="ADD MENU"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp" />
+
+    </androidx.appcompat.widget.Toolbar>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/card"
@@ -15,7 +37,7 @@
         app:cardElevation="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_menu_toolbar"
         app:strokeColor="@color/stroke_color"
         app:strokeWidth="1dp">
 
@@ -33,14 +55,14 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
-                    android:id="@+id/image_view_prodct"
+                    android:id="@+id/menu_image"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/baseline_table"
-                    android:scaleType="fitXY" />
+                    android:scaleType="fitXY"
+                    android:src="@drawable/baseline_table" />
 
                 <ImageView
-                    android:id="@+id/loadProdct"
+                    android:id="@+id/iv_load_menu_image"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="end|bottom"
@@ -51,12 +73,12 @@
             </FrameLayout>
 
             <!-- Media -->
-<!--            <ImageView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="194dp"-->
-<!--                android:contentDescription="table"-->
-<!--                android:scaleType="centerCrop"-->
-<!--                app:srcCompat="@drawable/baseline_table" />-->
+            <!--            <ImageView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="194dp"-->
+            <!--                android:contentDescription="table"-->
+            <!--                android:scaleType="centerCrop"-->
+            <!--                app:srcCompat="@drawable/baseline_table" />-->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -64,14 +86,27 @@
                 android:orientation="vertical"
                 android:padding="16dp">
 
-                <!-- Title, secondary and supporting text -->
-                <EditText
-                    android:layout_width="wrap_content"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutEmail"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Table No.: T01"
-                    android:textAppearance="?attr/textAppearanceHeadline6" />
+                    app:boxBackgroundColor="@color/white"
+                    app:counterMaxLength="100"
+                    app:endIconMode="clear_text"
+                    app:helperTextTextColor="@color/appColor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_menu_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Menu name" />
 
+                </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
 
@@ -80,14 +115,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingLeft="16dp">
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/add_menu_button"
                     style="?attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/appColor"
-                    android:text="SELECT"
+                    android:text="ADD menu"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 

@@ -1,11 +1,16 @@
 package com.example.xcode.utilities
 
+import android.app.Activity
+import android.content.Context
+import android.content.Intent
+import android.provider.MediaStore
+import android.provider.MediaStore.Images.Media
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.xcode.R
 import com.google.android.material.snackbar.Snackbar
 
-class BaseActivity:AppCompatActivity() {
+open class BaseActivity:AppCompatActivity() {
 
     fun showErrorSnackBar(message: String, errorMessage: Boolean){
         val snackBar = Snackbar.make(findViewById(android.R.id.content), message, Snackbar.LENGTH_LONG)
@@ -30,4 +35,5 @@ class BaseActivity:AppCompatActivity() {
         }
         snackBar.show()
     }
+
 }
